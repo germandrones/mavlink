@@ -1395,6 +1395,13 @@
 	    <field type="int8_t" name="flight_stage">stages of flight (FLIGHT_NORMAL=1, FLIGHT_TAKEOFF=2, FLIGHT_LAND_APPROACH=3, FLIGHT_LAND_FINAL=4, FLIGHT_LAND_ABORT=5)</field>
     </message>
     
+    <message name="INITIAL_CHECK" id="235">
+	    <description>Message sent to the end user and between boards if something goes wrong during the intial check</description>
+	    <field name="board" type="char">Board (for the moment, P = PixHawk, G = GDPilot)</field>
+	    <field name="err_num" type="uint8_t">Error number</field>
+	    <field name="err_msg" type="char[100]">Error message description</field>
+    </message>
+    
     <!-- ardupilot specific mavlink2 messages starting at 11000-->
     <message id="11000" name="DEVICE_OP_READ">
       <description>Read registers for a device</description>
