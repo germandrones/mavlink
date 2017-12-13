@@ -1398,8 +1398,9 @@
     <message name="INITIAL_CHECK" id="235">
 	    <description>Message sent to the end user and between boards if something goes wrong during the intial check</description>
 	    <field name="board" type="char">Board (for the moment, P = PixHawk, G = GDPilot)</field>
-	    <field name="err_num" type="uint8_t">Error number</field>
+	    <field name="err_num" type="int8_t">Error number</field>
 	    <field name="err_msg" type="char[100]">Error message description</field>
+	    <field name="fmode" type="int32_t">Error message description</field>
     </message>
     
     <!-- ardupilot specific mavlink2 messages starting at 11000-->
