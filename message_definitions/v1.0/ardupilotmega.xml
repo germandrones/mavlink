@@ -1403,6 +1403,11 @@
 	    <field name="fmode" type="int32_t">Error message description</field>
     </message>
     
+    <message name="ACK_GDPILOT" id="236">
+	    <description>Ack/Nack message for GDPilot</description>
+	    <field name="ack" type="uint32_t">Status (NACK = 0, ACK = 1)</field>
+    </message>    
+    
     <!-- ardupilot specific mavlink2 messages starting at 11000-->
     <message id="11000" name="DEVICE_OP_READ">
       <description>Read registers for a device</description>
