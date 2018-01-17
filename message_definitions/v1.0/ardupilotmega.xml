@@ -1403,10 +1403,21 @@
 	    <field name="fmode" type="int32_t">Error message description</field>
     </message>
     
+    
     <message name="ACK_GDPILOT" id="236">
 	    <description>Ack/Nack message for GDPilot</description>
 	    <field name="ack" type="uint32_t">Status (NACK = 0, ACK = 1)</field>
-    </message>    
+    </message>
+    
+     <message name="HWP" id="238">
+	    <description>Headwind WP</description>
+	    <field name="hwp1_lat" type="int32_t">HWP1 Lattitude</field>
+	    <field name="hwp1_lng" type="int32_t">HWP1 Longtitude</field>
+	    <field name="hwp2_lat" type="int32_t">HWP2 Lattitude</field>
+	    <field name="hwp2_lng" type="int32_t">HWP2 Longtitude</field>
+	    <field name="hwp3_lat" type="int32_t">HWP3 Lattitude</field>
+	    <field name="hwp3_lng" type="int32_t">HWP3 Longtitude</field>
+    </message>
     
     <!-- ardupilot specific mavlink2 messages starting at 11000-->
     <message id="11000" name="DEVICE_OP_READ">
