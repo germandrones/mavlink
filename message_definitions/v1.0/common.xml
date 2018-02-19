@@ -1682,6 +1682,10 @@
         <param index="6">User defined</param>
         <param index="7">User defined</param>
       </entry>
+      <entry value="31015" name="MAV_CMD_LP">
+        <description>Command for selecting the landing procedure</description>
+        <param index="1">Status (0: default landing procedure, 1: hwp)</param>
+      </entry>
       <!-- END of user range (31000 to 31999) -->
     </enum>
     <enum name="MAV_DATA_STREAM">
