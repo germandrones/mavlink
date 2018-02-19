@@ -784,6 +784,26 @@
         <param index="6">Longitude</param>
         <param index="7">Altitude</param>
       </entry>
+      <entry value="86" name="MAV_CMD_HWP">
+        <description>Command for selecting the landing procedure</description>
+        <param index="1">Status (0: default landing procedure, 1: hwp)</param>
+        <param index="2">Empy</param>
+        <param index="3">Empy</param>
+        <param index="4">Empy</param>
+        <param index="5">Empy</param>
+        <param index="6">Empy</param>
+        <param index="7">Empy</param>
+      </entry>
+      <entry value="87" name="MAV_CMD_LAND_AT_TAKEOFF">
+        <description>Land at the takeoff waypoint</description>
+        <param index="1">Latitude</param>
+        <param index="2">Longitude</param>
+        <param index="3">Altitude</param>
+        <param index="4">Empy</param>
+        <param index="5">Empy</param>
+        <param index="6">Empy</param>
+        <param index="7">Empy</param>
+      </entry>      
       <!-- IDs 90 and 91 are reserved until the end of 2014,
                     as they were used in some conflicting proposals
                     between PX4 and ardupilot and need to be kept
@@ -1681,10 +1701,6 @@
         <param index="5">User defined</param>
         <param index="6">User defined</param>
         <param index="7">User defined</param>
-      </entry>
-      <entry value="31015" name="MAV_CMD_LP">
-        <description>Command for selecting the landing procedure</description>
-        <param index="1">Status (0: default landing procedure, 1: hwp)</param>
       </entry>
       <!-- END of user range (31000 to 31999) -->
     </enum>
