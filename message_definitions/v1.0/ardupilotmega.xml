@@ -1421,6 +1421,12 @@
 	    <field name="hwp4_lat" type="int32_t">HWP4 Latitude</field>
 	    <field name="hwp4_lng" type="int32_t">HWP4 Longtitude</field>
     </message>
+
+    <message name="LOG_INFO_REQUEST" id="239">
+ 	    <description>log id</description>
+      <field name="id" type="uint16_t">File id</field>
+      <field name="gitHash" type="char[40]">GitHash</field>
+    </message>
     
     <!-- ardupilot specific mavlink2 messages starting at 11000-->
     <message id="11000" name="DEVICE_OP_READ">
